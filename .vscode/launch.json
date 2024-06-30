@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "name": "Run Leetcode",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "kit.core.internal.cli.__main__",
+      "justMyCode": true,
+      "args": [
+        "test",
+        "-D",
+        "--local",
+        "-d",
+        "${input:dataCenter}",
+        "-k",
+        "${input:dashKParam}",
+        "-m",
+        "${input:dashMParam}"
+      ]
+    }
+  ]
+}
